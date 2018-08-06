@@ -444,16 +444,3 @@ i *= static_cast<int>(d);
 > ```
 
 `j/i` is an int(by truncation), then converted to double and assigned to slope.
-
-> if (p = getPtr() != 0)
-> if (i = 1024)
-> // why? always true. use an assigment as a condition.
-> // correct it
-> if ((p = getPtr()) != 0)
-> if (i == 1024)
-> ```
-
-
-> What would happen if the while loop on page 148 that prints the elements from a vector used the prefix increment operator?
-
-It will print from the second element and dereference `v.end()` at last.(It's undefined and very dangerous
